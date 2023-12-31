@@ -93,6 +93,7 @@ nav img{
     transform: translate(-50%,-50%),scale(0);
 }
 #page1{
+    border: 1px solid red;
     padding: 30px;
     margin-top: 15vw;
     min-height: 100vh;
@@ -103,6 +104,7 @@ nav img{
 
 }
 #page1 h1{
+    border: 1px solid red;
     font-family: Poppins;
     font-size: 15.8vw;
     text-transform: uppercase; 
@@ -111,6 +113,7 @@ nav img{
     margin-top: 5vh;
 }
 #video-container{
+    border: 1px solid red;
     height: 100vh;
     width: 100%;
     background-color: grey;
@@ -133,6 +136,7 @@ nav img{
     border-radius: 50%;
 }
 #page2{
+    
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -462,8 +466,9 @@ button{
     }
     #video-container{
         
-        height: 45vh;
+        height: 50vh;
         margin-top: 3vw;
+        margin-bottom: 2vw;
     
     }
     #video-container #play{
@@ -488,17 +493,18 @@ button{
         /* background-color: blueviolet; */
         /* top: 2vh; */
         
-        min-height: 70vh;
+        min-height: 50vh;
         width: 100%;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        /* padding: 5vw 3vw; */
+        padding: 1vw 1vw;
+        border: 1px solid red;
     }
     #page2 .elem{
-        height: 70vh;
+        height: 100vh;
         width: 100%;
         overflow:hidden;
         margin-top: 3vw;
@@ -507,7 +513,7 @@ button{
         
     }
     #page2 .elem img{
-        height: 100vh;
+        height: 70vh;
         width: 100%;
         object-fit: cover;
     }
@@ -528,9 +534,10 @@ button{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 100px;
     }
     #page2-btm-lft{
-        padding-top: 30px;
+        padding-top: 50px;
         /* padding-left: 10px; */
         width: 90%;
         font-family: poppins;
