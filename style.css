@@ -9,12 +9,14 @@
 *::selection{
     color: black;
     background-color: white; 
+    overflow: hidden;
     /* Drag mouse on font and background color of font changes */
 
 }
 html,body{
     height: 100%;
     width: 100%;
+    
 }
 body{
     background-color: #f7f7f7;
@@ -36,7 +38,13 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    padding-top: 20px;
+    font-family: poppins;
     
+}
+#nav-part2 #link a:hover{
+text-decoration: underline;
+color: aqua;
 }
 #links{
     padding: 10px;
@@ -85,7 +93,7 @@ nav img{
     transform: translate(-50%,-50%),scale(0);
 }
 #page1{
- 
+    padding: 30px;
     margin-top: 15vw;
     min-height: 100vh;
     width: 100%;
@@ -258,24 +266,30 @@ line-height: 30px;
 
     min-height: 200vh;
     width: 100%;
-    font-family: poppins;
-    font-size: 70px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 80px;
+    padding: 20px;
 }
 #page4 h2{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: poppins;
+    font-size: 100px;
+    font-weight: 1000;
     line-height: 90px;
-    padding-left: 60px;
+    /* padding-left: 60px; */
 }
 button{
-    padding: 30px 100px;
+    padding: 30px 140px;
     background-color: black;
     border-radius: 50px;
     font-weight: 700;
     color: #f7f7f7;
+    font-size: 16px;
 }
 #page4 p{
     font-size: 20px;
@@ -291,26 +305,91 @@ button{
     width: 30%;
     padding: 30px;
     font-family: poppins;
+    font-size: 20px;
     /* background-color: aqua; */
    
+}
+#page5-lft-part h3{
+    font-size: 34px;
+    padding-bottom: 20px;
 }
 #page5-rght-part{
     width: 70%;
     padding: 30px;
     font-family: poppins;
     /* background-color: aqua; */
-    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
    
 }
 #page5-rght-part img{
-    width: 46%;
+    width: 49%;
    
 }
 #part6{
     width: 100%;
-    height: 100vh;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    
 }
+#part6 h2{
+    font-family: poppins;
+    font-size: 60px;
+    font-weight: 800;
+}
+#social{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 30px; */
+    padding: 0 1vw;
+    font-family: poppins;
+}
+#social-lft-part h5, #social-rght-part h5{
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: grey;
+    font-family: Montserrat;
+}
+#social-cntr-part img{
+    width: 200px;
+}
+#social-rght-part #links{
+    align-items: end;
+}
+
+#footer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+#footer-btm{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 @media (max-width:600px){
+    #main{
+        overflow: hidden;
+        padding: 20px;
+    }
+    #cursor{
+        display: block;
+    }
     nav{
         /* height: 100px; */
         width: 100%;
@@ -332,8 +411,7 @@ button{
         
     }
     #links{
-        padding: 10px;
-        display: none;
+       display: none;
     }
     #nav-part1{
     height: 67px;
@@ -341,8 +419,6 @@ button{
     }
     #nav-part1 img{
     display: block;
-    height: 67px;
-    width: 100%;
 
     }
     nav #twogoodlogo{
@@ -366,21 +442,26 @@ button{
         padding: 10px 20px;
     }
     #page1{
+        
+        top: 100px;
+        align-items: end;
         width: 100%;
         min-height: 70vh;
         position: relative;
-        padding-top: 25vh;
+        padding-top: 5vh;
         padding: 0 3vw;
-        min-height: 10vh;
+        /* background-color: aqua; */
     
     }
     #page1 h1{
         font-family: Poppins;
         font-size: 16vw;
         letter-spacing: -3px;
-        margin-top: 3vh;
+        margin-top: 0vh;
+        /* line-height: 40px; */
     }
     #video-container{
+        
         height: 45vh;
         margin-top: 3vw;
     
@@ -400,25 +481,33 @@ button{
         scale: 1;
         transform: translate(-50%,-50%);
     }
+    #cursor{
+        display: none;
+    }
     #page2{
-        min-height: 100vh;
+        /* background-color: blueviolet; */
+        /* top: 2vh; */
+        
+        min-height: 70vh;
         width: 100%;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        padding: 5vw 3vw;
+        /* padding: 5vw 3vw; */
     }
     #page2 .elem{
-        height: 100vh;
+        height: 70vh;
         width: 100%;
         overflow:hidden;
+        margin-top: 3vw;
         margin-bottom: 3vw;
         position: relative;
+        
     }
     #page2 .elem img{
-        height: 100%;
+        height: 100vh;
         width: 100%;
         object-fit: cover;
     }
@@ -433,24 +522,34 @@ button{
        height: 200px; 
     }
     #page2-btm{
+        /* background-color: aqua; */
+        top: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
     #page2-btm-lft{
-        padding-left: 30px;
+        padding-top: 30px;
+        /* padding-left: 10px; */
         width: 90%;
         font-family: poppins;
         font-size: 24px;
         line-height: 40px;
         height: 12vh;
          }
-         #page2-btm-rght{
-            align-items: start;
-            width: 80%;
-            font-family: poppins;
+    #page2-btm-lft h2{
+        font-size: 32px;
+    }
 
+         #page2-btm-rght{
+            padding-top: 30px;
+            /* padding-left: 10px; */
+            align-items: start;
+            width: 90%;
+            font-size: 16px;
+            font-family: poppins;
+            align-items: center;
              }
     #page3{
         min-height: 100vh;
@@ -474,20 +573,27 @@ button{
         flex-direction: column;
     }
     .child img{
-        height: 100vh;
+        width: 100%;
         
     }
     #page4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: poppins;
-        font-size: 20px;
-        min-height: 120vh;
+        min-height: 70vh;
+        /* margin: 14px 5x; */
+        /* background-color: aqua; */
     }
     #page4 h2{
-        line-height: 40px;
-        /* padding-left: 60px; */
+        align-content: center;
+         /* background-color: aqua; */
+        font-family: poppins;
+        font-size: 22px;
+        line-height: 24px;
     }
     button{
-        padding: 30px 100px;
+        padding: 20px 50px;
         background-color: black;
         border-radius: 50px;
         font-weight: 700;
@@ -509,13 +615,14 @@ button{
     }
     #page5-lft-part{
         width: 100%;
-        padding: 30px;
+        font-size: 16px;
+        /* padding: 30px; */
         font-family: poppins;
        
     }
     #page5-rght-part{
         width: 100%;
-        padding: 10px;
+        /* padding: 10px; */
         font-family: poppins;
         /* background-color: aqua; */
        
@@ -525,8 +632,53 @@ button{
        
     }
     #part6{
+        /* background-color: aqua; */
         width: 100%;
-        height: 100vh;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* padding-right:20px ; */
+        gap: 30px;
+        margin: 20px;
+       
+    }
+    #part6 h2{
+        font-size: 26px;
+        font-family: poppins;
+    }
+    #social{
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+    }
+    #social-cntr-part{
+        display: none;
+    }
+    #footer-btm{
+        font-family: poppins;
+        font-size: 12px;
+    }
+    #footer{
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    #footer-top h5{
+        font-size: 16px;
+        font-family: Montserrat;
+        color: grey;
+       padding-bottom: 40px;
+    }
+    #footer-top p{
+        font-family: poppins;
+        font-size: 14px;
     }
     
 }
