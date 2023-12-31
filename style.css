@@ -501,7 +501,6 @@ button{
         justify-content: space-around;
         flex-direction: column;
         padding: 1vw 1vw;
-        border: 1px solid red;
     }
     #page2 .elem{
         height: 100vh;
